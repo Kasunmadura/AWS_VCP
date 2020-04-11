@@ -2,7 +2,7 @@
 A VPC is a virtual network inside AWS where you can isolate your setup using private IP addresses. A VPC consists of several subnets. Each subnet is bound to an Availability Zone. A public subnet has a direct route to the Internet. As long as your EC2 instances have an public IP they can communicate (in and out) with the Internet. A private subnet does not have a route to the Internet. Instances in private subnets can not be accessed from the public Internet. If you want to access the Internet from a private subnet you need to create a NAT gateway/instance
 
 
-![alt text](https://raw.githubusercontent.com/Kasunmadura/AWS_VCP/blob/master/vpc.jpg)
+![alt text](https://github.com/Kasunmadura/AWS_VCP/blob/master/vpc.jpg)
 
 This template describes a highly available Network Address Translation (NAT) instance that forwards HTTP, HTTPS and NTP traffic from a single private subnet to the Internet. You need one stack per availability zone. Example: If you use the vpc-2azs.yaml template, you will need two Nat Gateway stack in A and B.
 
